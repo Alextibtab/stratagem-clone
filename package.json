@@ -1,0 +1,19 @@
+{
+  "name": "stratagem_hero",
+  "version": "1.0.0",
+  "description": "stratagem hero clone",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pixi/graphics-extras": "^7.4.0",
+    "@pixi/sound": "^5.2.3",
+    "@pixi/ui": "^0.10.5",
+    "howler": "^2.2.4",
+    "pixi.js": "^7.4.0"
+  }
+}
