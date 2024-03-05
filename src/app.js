@@ -1,5 +1,9 @@
 import * as PIXI from "pixi.js";
 import "@pixi/graphics-extras";
+import { sound } from "@pixi/sound";
+import select from "./assets/sounds/select.mp3";
+
+sound.add("select", select);
 
 const background_colour = 0x1b2223;
 const main_colour = 0xf4faff;
@@ -92,6 +96,7 @@ const startScreen = () => {
   center_text(start_message);
   start_message.eventMode = "static";
   start_message.on("pointertap", () => {
+    sound.play("select");
     gameState.change("round_start");
   });
 
